@@ -4,6 +4,7 @@ const app = express();
 // const data = require('./db/database')
 const router = require('./routes/routers');
 
+app.use(express.json());
 
 app.use("/", router);
 
