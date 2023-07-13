@@ -1,10 +1,10 @@
 const router = require('express').Router()
-const authentication = require('../routes/auth');
+const authentication = require('./auth');
 
 // ###***********************************************************authentication routes*************************************************************###
-router.post('/app', authentication.auth);
-
+router.post('/register', authentication.auth);
 router.get('/', authentication.data);
+router.get('/login', authentication.login);
 
-module.exports = router
+module.exports = router;
 
